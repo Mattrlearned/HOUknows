@@ -8,7 +8,8 @@ class AnswersController < ApplicationController
          Answer.where('text LIKE ?,' "%#{params[:term]}%")
      else
           Answer.all
-     end
+               end
+    @categories = Category.all
   end
 
   # GET /answers/1
@@ -73,6 +74,6 @@ class AnswersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def answer_params
-      params.require(:answer).permit(:CatergoryID, :UserID, :text)
+      params.require(:answer).permit(:CategoryID, :UserID, :text)
     end
 end

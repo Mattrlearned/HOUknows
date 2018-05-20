@@ -15,17 +15,8 @@ ActiveRecord::Schema.define(version: 2018_05_19_230756) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "Answer", primary_key: "ID", id: :serial, force: :cascade do |t|
-    t.serial "CategoryID", null: false
-    t.index ["CategoryID"], name: "fki_AnswerCategorForeignKey"
-  end
-
-  create_table "Category", primary_key: "ID", id: :serial, force: :cascade do |t|
-    t.string "Name"
-  end
-
   create_table "answers", force: :cascade do |t|
-    t.integer "CatergoryID"
+    t.integer "CategoryID"
     t.integer "UserID"
     t.string "text"
     t.datetime "created_at", null: false
@@ -44,5 +35,4 @@ ActiveRecord::Schema.define(version: 2018_05_19_230756) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "Answer", "\"Category\"", column: "CategoryID", primary_key: "ID", name: "AnswerCategorForeignKey"
 end
