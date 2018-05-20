@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Rails htxfaq: development">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.8">
     <root id="1"/>
     <database id="2" parent="1" name="htxfaq">
       <ObjectId>18637</ObjectId>
@@ -75,36 +75,36 @@
     </table>
     <column id="20" parent="15" name="id">
       <Position>1</Position>
-      <DataType>bigint|0</DataType>
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43632</StateNumber>
-      <SequenceName>answers_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;answers_id_seq&apos;::regclass)</DefaultExpression>
+      <SequenceName>answers_id_seq</SequenceName>
     </column>
     <column id="21" parent="15" name="CategoryID">
       <Position>2</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <StateNumber>43632</StateNumber>
     </column>
     <column id="22" parent="15" name="UserID">
       <Position>3</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <StateNumber>43632</StateNumber>
     </column>
     <column id="23" parent="15" name="text">
       <Position>4</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <StateNumber>43632</StateNumber>
     </column>
     <column id="24" parent="15" name="created_at">
       <Position>5</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43632</StateNumber>
     </column>
     <column id="25" parent="15" name="updated_at">
       <Position>6</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43632</StateNumber>
     </column>
@@ -121,24 +121,24 @@
     </key>
     <column id="28" parent="16" name="key">
       <Position>1</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43624</StateNumber>
     </column>
     <column id="29" parent="16" name="value">
       <Position>2</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <StateNumber>43624</StateNumber>
     </column>
     <column id="30" parent="16" name="created_at">
       <Position>3</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43624</StateNumber>
     </column>
     <column id="31" parent="16" name="updated_at">
       <Position>4</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43624</StateNumber>
     </column>
@@ -155,26 +155,26 @@
     </key>
     <column id="34" parent="17" name="id">
       <Position>1</Position>
-      <DataType>bigint|0</DataType>
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43626</StateNumber>
-      <SequenceName>categories_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;categories_id_seq&apos;::regclass)</DefaultExpression>
+      <SequenceName>categories_id_seq</SequenceName>
     </column>
     <column id="35" parent="17" name="name">
       <Position>2</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <StateNumber>43626</StateNumber>
     </column>
     <column id="36" parent="17" name="created_at">
       <Position>3</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43626</StateNumber>
     </column>
     <column id="37" parent="17" name="updated_at">
       <Position>4</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43626</StateNumber>
     </column>
@@ -191,7 +191,7 @@
     </key>
     <column id="40" parent="18" name="version">
       <Position>1</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43623</StateNumber>
     </column>
@@ -208,26 +208,26 @@
     </key>
     <column id="43" parent="19" name="id">
       <Position>1</Position>
-      <DataType>bigint|0</DataType>
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43625</StateNumber>
-      <SequenceName>users_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <SequenceName>users_id_seq</SequenceName>
     </column>
     <column id="44" parent="19" name="username">
       <Position>2</Position>
-      <DataType>varchar|0</DataType>
+      <DataType>varchar|0s</DataType>
       <StateNumber>43625</StateNumber>
     </column>
     <column id="45" parent="19" name="created_at">
       <Position>3</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43625</StateNumber>
     </column>
     <column id="46" parent="19" name="updated_at">
       <Position>4</Position>
-      <DataType>timestamp|0</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>43625</StateNumber>
     </column>
