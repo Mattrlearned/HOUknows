@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails htxfaq: production" uuid="1df9d42d-d58b-4d27-8762-a8306eb9b121">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="Rails htxfaq: development" uuid="055b0900-ed5e-4485-89c7-b384b3a89351">
+      <database-info product="PostgreSQL" version="10.4" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>htxfaq:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails htxfaq: test" uuid="a7e76e7a-7ee0-4583-8c38-8d7f1d969c6d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+  </component>
+</project>
