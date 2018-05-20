@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :CategoryID %>
-    <%= form.number_field :CategoryID %>
+    <%= form.collection_select(:CategoryID, Category.all, :id, :name, :prompt => true) %>
   </div>
 
   <div class="field">
     <%= form.label :UserID %>
-    <%= form.number_field :UserID %>
+    <%= form.collection_select(:UserID, User.all, :id, :username, :prompt => true) %>
   </div>
 
   <div class="field">

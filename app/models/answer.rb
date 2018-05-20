@@ -1,6 +1,6 @@
 class Answer < ApplicationRecord
-  belongs_to :categories, optional: true
-  belongs_to :users, optional: true
+  belongs_to :category, optional: true
+  belongs_to :user, optional: true
 
 
 
