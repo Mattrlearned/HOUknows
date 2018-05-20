@@ -4,8 +4,8 @@ class AnswersController < ApplicationController
   # GET /answers
   # GET /answers.json
   def index
-    @answers = if params[:term]
-         Answer.where('text LIKE ?,' "%#{params[:term]}%")
+    @answers = if params[:answer]
+         Answer.where('text LIKE ?', "%#{params[:answer]}%")
      else
           Answer.all
                end
@@ -55,7 +55,6 @@ class AnswersController < ApplicationController
       end
     end
   end
-
   # DELETE /answers/1
   # DELETE /answers/1.json
   def destroy

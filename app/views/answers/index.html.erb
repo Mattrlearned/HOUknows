@@ -21,6 +21,11 @@
         <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr>
     <% end %>
+    <%= form_tag(answers_path, method: :get) do %>
+    <%= text_field_tag :answer %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+
   </tbody>
 </table>
 
